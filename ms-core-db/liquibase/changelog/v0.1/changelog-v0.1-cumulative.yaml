@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: v0.1-01-create-name-1.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: v0.1-02-create-name-2.yaml
+      relativeToChangelogFile: true

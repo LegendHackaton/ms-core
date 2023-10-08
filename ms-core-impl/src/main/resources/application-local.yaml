@@ -1,0 +1,27 @@
+spring:
+  jpa:
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        generate_statistics: true
+        batch_fetch_style: dynamic
+        jdbc:
+          fetch_size: 50
+          batch_size: 10
+  datasource:
+    hikari:
+      auto-commit: false
+    url: jdbc:postgresql://${server-name}:${database-port}/${database-name}
+    username: ${database-user}
+    password: ${database-password}
+
+server:
+  port: 8084
+
+server-name: localhost
+database-port: 5432
+database-name: taskflow
+database-user: root
+database-password: root
